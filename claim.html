@@ -304,6 +304,10 @@
         <p class="rule-detail">If we didn't post it on TikTok or Instagram, it doesn't qualify. You can check our accounts — TikTok and Instagram are linked at the bottom of this page.</p>
       </li>
       <li>
+        <strong>Re-share the video on your own social media and tag @pizzafornoguelph.</strong>
+        <p class="rule-detail">Before you submit this form, post the featured video on your own TikTok, Instagram Story, Reel, or feed — and tag @pizzafornoguelph in the caption or the tag sticker. Paste the link to your re-share below so we can verify. This is part of the deal: we give you the pizza, you help us get the word out.</p>
+      </li>
+      <li>
         <strong>One coupon per featured video — first to claim wins.</strong>
         <p class="rule-detail">If you and your friends are all in the same clip, the first person to submit this form gets the pizza. We only give one pizza away per video, not one per person.</p>
       </li>
@@ -395,6 +399,12 @@
         </div>
 
         <div class="form-group">
+          <label for="reshare_url">Link to your re-share (tagged @pizzafornoguelph) <span class="req">*</span></label>
+          <input type="url" id="reshare_url" name="reshare_url" required placeholder="https://www.instagram.com/p/... or https://www.tiktok.com/@yourname/video/...">
+          <div class="hint">Post the featured video on your own Instagram, TikTok, or Story and tag @pizzafornoguelph. Paste the link to that post here so we can verify.</div>
+        </div>
+
+        <div class="form-group">
           <label for="flavour">Preferred pizza flavour (we'll note it, not required)</label>
           <select id="flavour" name="flavour">
             <option value="">Choose later at the kiosk</option>
@@ -408,7 +418,7 @@
 
         <div class="form-group form-checkbox">
           <input type="checkbox" id="agree" name="agree" required value="yes">
-          <label for="agree">I've read the rules above. I confirm I'm actually in this video, I'm over 13, and I understand only one coupon is issued per featured video on a first-come basis.</label>
+          <label for="agree">I've read the rules above. I confirm I'm actually in this video, I'm over 13, I've re-shared the video on my own social media and tagged @pizzafornoguelph, and I understand only one coupon is issued per featured video on a first-come basis.</label>
         </div>
 
         <div class="form-actions">
