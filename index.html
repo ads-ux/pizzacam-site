@@ -619,6 +619,20 @@
     .video-cta { text-align: center; margin-top: 40px; }
     @media (max-width: 768px) { .video-grid { grid-template-columns: 1fr; max-width: 400px; margin: 40px auto 0; } }
 
+    /* Real TikTok embeds */
+    .tiktok-embed-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; justify-items: center;
+    }
+    .tiktok-embed-wrap { width: 100%; max-width: 420px; min-height: 740px; }
+    .tiktok-embed-wrap blockquote.tiktok-embed { margin: 0 auto !important; }
+    @media (max-width: 1100px) {
+      .tiktok-embed-grid { grid-template-columns: repeat(2, 1fr); }
+      .tiktok-embed-wrap { max-width: 500px; }
+    }
+    @media (max-width: 700px) {
+      .tiktok-embed-grid { grid-template-columns: 1fr; max-width: 500px; margin: 40px auto 0; }
+    }
+
     /* ========== HOW IT WORKS ========== */
     .how-it-works { padding: 100px 0; background: var(--cream); }
     .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
@@ -845,7 +859,7 @@
       <div class="hero-visual">
         <div class="hero-photo">
           <div class="rec-badge">REC</div>
-          <img src="images/pizzacam-group-celebrate.jpg" alt="Students celebrating with pizza at PizzaCam Guelph kiosk" width="800" height="800" loading="eager">
+          <img src="images/hero_cheese_pull.jpg" alt="PizzaCam kiosk with a student pulling a cheesy slice in front — caught on the Pizza Cam" width="1024" height="1024" loading="eager">
         </div>
       </div>
     </div>
@@ -1016,63 +1030,52 @@
       <h2 class="section-title">751K TikTok Views &bull; 144K Instagram Reel Views This Month</h2>
       <p class="section-subtitle" style="color: rgba(255,255,255,0.5);">Real students. Real reactions. All caught on the Pizza Cam at U of Guelph. Follow us @pizzafornoguelph.</p>
     </div>
-    <!-- Top 2 TikToks -->
-    <div class="video-grid">
-      <div class="video-card">
-        <a class="video-thumb-link" href="https://www.tiktok.com/@pizzafornoguelph" target="_blank" rel="noopener" aria-label="Watch POV: you're broke but... on TikTok">
-          <span class="video-platform-badge">&#127916; TikTok</span>
-          <img src="images/pizzacam-crew-dancing.jpg" alt="PizzaCam students on TikTok — POV: you're broke but... reel" loading="lazy" width="540" height="960">
-          <span class="video-view-badge">3,967 views</span>
-          <span class="video-play-overlay"><span class="video-play-icon">&#9654;</span></span>
-        </a>
-        <div class="video-card-info">
-          <div class="views">3,967 views</div>
-          <div class="caption">POV: you're broke but they can't afford the pizza</div>
-          <div class="platform">TikTok</div>
-        </div>
+    <!-- Embedded TikToks -->
+    <div class="tiktok-embed-grid">
+      <div class="tiktok-embed-wrap">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7623197336692346133" data-video-id="7623197336692346133" style="max-width: 420px; min-width: 325px;">
+          <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
+        </blockquote>
       </div>
-      <div class="video-card">
-        <a class="video-thumb-link" href="https://www.tiktok.com/@pizzafornoguelph" target="_blank" rel="noopener" aria-label="Watch the audacity to walk up to... on TikTok">
-          <span class="video-platform-badge">&#127916; TikTok</span>
-          <img src="images/pizzacam-group-dance.jpg" alt="PizzaCam students on TikTok — bro got a mullet and came to the pizza reel" loading="lazy" width="540" height="960">
-          <span class="video-view-badge">3,324 views</span>
-          <span class="video-play-overlay"><span class="video-play-icon">&#9654;</span></span>
-        </a>
-        <div class="video-card-info">
-          <div class="views">3,324 views</div>
-          <div class="caption">The audacity to walk up to the PizzaCam like this (bro got a mullet)</div>
-          <div class="platform">TikTok</div>
-        </div>
+      <div class="tiktok-embed-wrap">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7613461951796022548" data-video-id="7613461951796022548" style="max-width: 420px; min-width: 325px;">
+          <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
+        </blockquote>
       </div>
-    </div>
-
-    <!-- Top 2 Instagrams -->
-    <div class="video-grid" style="margin-top: 24px;">
-      <div class="video-card">
-        <a class="video-thumb-link" href="https://www.instagram.com/pizzafornoguelph/" target="_blank" rel="noopener" aria-label="Watch POV: you're broke but... on Instagram">
-          <span class="video-platform-badge">&#128247; Instagram</span>
-          <img src="images/pizzacam-peace-sign.jpg" alt="PizzaCam students on Instagram — POV: you're broke but... reel" loading="lazy" width="540" height="960">
-          <span class="video-view-badge">3,967 views</span>
-          <span class="video-play-overlay"><span class="video-play-icon">&#9654;</span></span>
-        </a>
-        <div class="video-card-info">
-          <div class="views">3,967 views &middot; 31 likes</div>
-          <div class="caption">POV: you're broke but they can't afford the pizza</div>
-          <div class="platform">Instagram</div>
-        </div>
+      <div class="tiktok-embed-wrap">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7621882762982788373" data-video-id="7621882762982788373" style="max-width: 420px; min-width: 325px;">
+          <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
+        </blockquote>
       </div>
-      <div class="video-card">
-        <a class="video-thumb-link" href="https://www.instagram.com/pizzafornoguelph/" target="_blank" rel="noopener" aria-label="Watch the audacity to walk up to... on Instagram">
-          <span class="video-platform-badge">&#128247; Instagram</span>
-          <img src="images/pizzacam-group-celebrate.jpg" alt="PizzaCam students on Instagram — the audacity to walk up to the pizzacam reel" loading="lazy" width="540" height="960">
-          <span class="video-view-badge">3,324 views</span>
-          <span class="video-play-overlay"><span class="video-play-icon">&#9654;</span></span>
-        </a>
-        <div class="video-card-info">
-          <div class="views">3,324 views &middot; 61 likes</div>
-          <div class="caption">The audacity to walk up to the PizzaCam like this</div>
-          <div class="platform">Instagram</div>
-        </div>
+      <div class="tiktok-embed-wrap">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7621294077115370773" data-video-id="7621294077115370773" style="max-width: 420px; min-width: 325px;">
+          <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
+        </blockquote>
+      </div>
+      <div class="tiktok-embed-wrap">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7615025913209621780" data-video-id="7615025913209621780" style="max-width: 420px; min-width: 325px;">
+          <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
+        </blockquote>
+      </div>
+      <div class="tiktok-embed-wrap">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7629517949740666132" data-video-id="7629517949740666132" style="max-width: 420px; min-width: 325px;">
+          <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
+        </blockquote>
+      </div>
+      <div class="tiktok-embed-wrap">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7629704631022619924" data-video-id="7629704631022619924" style="max-width: 420px; min-width: 325px;">
+          <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
+        </blockquote>
+      </div>
+      <div class="tiktok-embed-wrap">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7627913325187288341" data-video-id="7627913325187288341" style="max-width: 420px; min-width: 325px;">
+          <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
+        </blockquote>
+      </div>
+      <div class="tiktok-embed-wrap">
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7622641341801057557" data-video-id="7622641341801057557" style="max-width: 420px; min-width: 325px;">
+          <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
+        </blockquote>
       </div>
     </div>
 
@@ -1305,8 +1308,8 @@
       <li><a href="https://www.instagram.com/pizzafornoguelph/" target="_blank" rel="noopener">Instagram</a></li>
       <li><a href="https://www.tiktok.com/@pizzafornoguelph" target="_blank" rel="noopener">TikTok</a></li>
       <li><a href="tel:18886038363">1-888-603-8363</a></li>
-      <li><a href="/privacy.html">Privacy Policy</a></li>
-      <li><a href="/takedown.html">Video Takedown</a></li>
+      <li><a href='/privacy'>Privacy Policy</a></li>
+      <li><a href='/takedown'>Video Takedown</a></li>
     </ul>
     <p>&copy; 2026 PizzaCam.ca &mdash; 149 Reynolds Walk, University of Guelph, ON N1G 4Z8</p>
     <p style="margin-top: 4px;">Operated by Messley Inc. Powered by <a href="https://pizzaforno.com" target="_blank" rel="noopener">PizzaForno</a>.</p>
@@ -1315,11 +1318,7 @@
 </footer>
 
 <!-- Embed Scripts -->
+<script async src="https://www.tiktok.com/embed.js"></script>
 
 </body>
 </html>
-
- Claude is active in this tab group  
-Open chat
- 
-Dismiss
