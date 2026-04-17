@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE9G8M2NMF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PE9G8M2NMF');
+  </script>
+
+  <title>Claim Your Free Pizza — Featured on the Pizza Cam | PizzaCam.ca</title>
+  <meta name="description" content="Got featured on @pizzafornoguelph TikTok or Instagram? Claim your free pizza at PizzaCam Guelph. One coupon per featured video. Submit your social handle and we'll verify.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://pizzacam.ca/claim">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Claim Your Free Pizza — Featured on the Pizza Cam">
+  <meta property="og:description" content="Got featured on our TikTok or Instagram? Claim your free pizza at PizzaCam Guelph.">
+  <meta property="og:url" content="https://pizzacam.ca/claim">
+  <meta property="og:image" content="https://pizzacam.ca/images/hero_cheese_pull.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    :root {
+      --red: #E31837;
+      --red-dark: #b8102a;
+      --black: #1a1a1a;
+      --white: #ffffff;
+      --cream: #FFF8F0;
+      --gold: #FFB800;
+      --gray-light: #f5f5f5;
+      --gray: #666;
+      --radius: 16px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+    .wide-container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    .section-label {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 0.875rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.1;
+      color: var(--black);
+      margin-bottom: 16px;
+    }
+    .section-subtitle {
+      color: var(--gray);
+      font-size: 1.05rem;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn-primary { background: var(--red); color: var(--white); }
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(227,24,55,0.35); }
+    .btn-primary:disabled { background: #999; cursor: not-allowed; transform: none; box-shadow: none; }
+    .btn-ghost { background: rgba(0,0,0,0.06); color: var(--black); border: 1px solid rgba(0,0,0,0.1); }
+
+    /* NAV */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(26,26,26,0.95); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between; height: 64px;
+    }
+    .nav-logo {
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: var(--white);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .nav-logo .dot { color: var(--red); }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,0.7); font-size: 0.875rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--white); }
+    .nav-cta .btn { padding: 10px 24px; font-size: 0.875rem; }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; }
+    .nav-toggle span { display: block; width: 24px; height: 2px; background: #fff; margin: 5px 0; transition: 0.3s; }
+    @media (max-width: 768px) {
+      .nav-toggle { display: block; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-links.open {
+        display: flex; flex-direction: column; position: absolute; top: 64px; left: 0; right: 0;
+        background: rgba(26,26,26,0.98); padding: 24px; gap: 16px;
+      }
+      .nav-cta.open { display: block; position: absolute; top: calc(64px + 180px); left: 24px; }
+    }
+
+    /* HERO */
+    .hero {
+      padding: 140px 0 60px; background: linear-gradient(135deg, #1a1a1a 0%, #2d0a0a 100%);
+      color: var(--white); text-align: center; position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; top: -50%; right: -20%;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(227,24,55,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,184,0,0.15); border: 1px solid rgba(255,184,0,0.3);
+      color: var(--gold); padding: 6px 16px; border-radius: 50px;
+      font-size: 0.8rem; font-weight: 600; margin-bottom: 24px; letter-spacing: 0.5px;
+      position: relative; z-index: 1;
+    }
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 0.95; margin-bottom: 20px; color: var(--white);
+      position: relative; z-index: 1;
+    }
+    .hero h1 .accent { color: var(--red); }
+    .hero p {
+      font-size: 1.1rem; color: rgba(255,255,255,0.7); max-width: 560px; margin: 0 auto;
+      line-height: 1.7; position: relative; z-index: 1;
+    }
+
+    /* RULES SECTION */
+    .rules { padding: 64px 0; background: var(--cream); }
+    .rules-intro { margin-bottom: 40px; text-align: center; }
+    .rules-list { list-style: none; counter-reset: rule; }
+    .rules-list li {
+      counter-increment: rule;
+      position: relative; padding: 20px 24px 20px 72px;
+      background: var(--white); border-radius: var(--radius);
+      box-shadow: var(--shadow); margin-bottom: 16px;
+    }
+    .rules-list li::before {
+      content: counter(rule);
+      position: absolute; left: 20px; top: 20px;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--red); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem;
+    }
+    .rules-list strong { color: var(--black); }
+    .rules-list p.rule-detail { color: var(--gray); font-size: 0.95rem; margin-top: 4px; }
+
+    /* FORM SECTION */
+    .form-section { padding: 64px 0; background: var(--white); }
+    .form-card {
+      background: var(--gray-light); border-radius: var(--radius);
+      padding: 40px; box-shadow: var(--shadow);
+    }
+    .form-group { margin-bottom: 20px; }
+    .form-group label {
+      display: block; font-weight: 600; font-size: 0.9rem;
+      margin-bottom: 6px; color: var(--black);
+    }
+    .form-group label .req { color: var(--red); }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; padding: 12px 14px; border: 1px solid rgba(0,0,0,0.15);
+      border-radius: 10px; font-family: inherit; font-size: 1rem;
+      background: var(--white); transition: border-color 0.2s;
+    }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+      outline: none; border-color: var(--red);
+    }
+    .form-group textarea { min-height: 100px; resize: vertical; }
+    .form-group .hint {
+      font-size: 0.85rem; color: var(--gray); margin-top: 4px;
+    }
+    .form-checkbox {
+      display: flex; align-items: flex-start; gap: 10px; margin-top: 8px;
+    }
+    .form-checkbox input[type="checkbox"] {
+      width: auto; margin-top: 4px; flex-shrink: 0;
+    }
+    .form-checkbox label {
+      font-size: 0.9rem; color: var(--gray); line-height: 1.5;
+    }
+    .form-actions { margin-top: 28px; text-align: center; }
+    .form-honeypot { display: none; }
+
+    /* FAQ */
+    .faq { padding: 64px 0; background: var(--cream); }
+    .faq-item {
+      background: var(--white); border-radius: var(--radius);
+      padding: 20px 24px; margin-bottom: 12px; box-shadow: var(--shadow);
+      cursor: pointer;
+    }
+    .faq-q {
+      font-weight: 700; font-size: 1.05rem; color: var(--black);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .faq-q::after { content: '+'; font-size: 1.5rem; color: var(--red); }
+    .faq-item.open .faq-q::after { content: '−'; }
+    .faq-a {
+      color: var(--gray); font-size: 0.95rem; line-height: 1.7;
+      margin-top: 12px; display: none;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* SUCCESS */
+    .thanks {
+      display: none; padding: 80px 24px; text-align: center;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d0a0a 100%);
+      color: var(--white); min-height: 60vh;
+    }
+    .thanks h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 16px; }
+    .thanks p { max-width: 500px; margin: 0 auto 24px; color: rgba(255,255,255,0.7); }
+    body.submitted .form-section, body.submitted .rules, body.submitted .faq { display: none; }
+    body.submitted .thanks { display: block; }
+
+    /* FOOTER */
+    footer {
+      background: var(--black); color: rgba(255,255,255,0.6);
+      padding: 40px 0; text-align: center; font-size: 0.875rem;
+    }
+    footer a { color: rgba(255,255,255,0.8); }
+    footer a:hover { color: var(--white); }
+    .footer-links {
+      list-style: none; display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 24px; margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">PIZZA<span class="dot">CAM</span><span style="font-size:0.6em;opacity:0.5;font-family:'Inter',sans-serif;font-weight:400;">.CA</span></a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/#how">How It Works</a></li>
+      <li><a href="/#pizza-cam">Pizza Cam</a></li>
+      <li><a href="/#menu">Menu</a></li>
+      <li><a href="/#videos">Videos</a></li>
+      <li><a href="/#location">Find Us</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://www.google.com/maps/dir/?api=1&amp;destination=149+Reynolds+Walk+Guelph+ON+N1G+4Z8" target="_blank" rel="noopener" class="btn btn-primary">Get Directions</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-badge">&#127829; FEATURED ON THE PIZZA CAM</div>
+    <h1>Claim Your <span class="accent">Free Pizza</span></h1>
+    <p>You did a bit, a dance, or a reaction at the PizzaCam — and we posted it. Nice. Here's how to collect on your free pizza.</p>
+  </div>
+</header>
+
+<!-- RULES -->
+<section class="rules">
+  <div class="container">
+    <div class="rules-intro">
+      <div class="section-label">The Ground Rules</div>
+      <h2 class="section-title">Quick, Fair, Honour-System-ish</h2>
+      <p class="section-subtitle" style="margin:0 auto;">We kept the rules short. The short version: one pizza per featured video, we verify you were in it, you pick it up at the UofG kiosk.</p>
+    </div>
+    <ol class="rules-list">
+      <li>
+        <strong>Your video must have been featured by us on @pizzafornoguelph.</strong>
+        <p class="rule-detail">If we didn't post it on TikTok or Instagram, it doesn't qualify. You can check our accounts — TikTok and Instagram are linked at the bottom of this page.</p>
+      </li>
+      <li>
+        <strong>One coupon per featured video — first to claim wins.</strong>
+        <p class="rule-detail">If you and your friends are all in the same clip, the first person to submit this form gets the pizza. We only give one pizza away per video, not one per person.</p>
+      </li>
+      <li>
+        <strong>You must submit your real Instagram or TikTok handle.</strong>
+        <p class="rule-detail">We use it to verify you're actually in the video. Fake or unverifiable handles get rejected.</p>
+      </li>
+      <li>
+        <strong>Every claim is manually reviewed.</strong>
+        <p class="rule-detail">We check every submission ourselves. If everything looks good, your coupon code lands in your inbox within 3 business days. If we can't confirm you, we'll let you know by email.</p>
+      </li>
+      <li>
+        <strong>Coupons are one-time codes, good for 30 days.</strong>
+        <p class="rule-detail">You get a unique code by email. Show it at the kiosk touchscreen to redeem one free 11-inch pizza (your choice of any variety — $14.99 value). Code expires 30 days after we issue it.</p>
+      </li>
+      <li>
+        <strong>Redeemable only at PizzaCam Guelph.</strong>
+        <p class="rule-detail">149 Reynolds Walk, on the University of Guelph campus, beside the Athletic Centre.</p>
+      </li>
+      <li>
+        <strong>Non-transferable, no cash value, can't stack with other promos.</strong>
+        <p class="rule-detail">Can't be sold, gifted, or combined with other discounts. One code, one pizza, one visit.</p>
+      </li>
+      <li>
+        <strong>We reserve the right to refuse claims if we spot abuse.</strong>
+        <p class="rule-detail">Duplicate submissions, fake handles, claims on videos we didn't actually post, or any other shenanigans — we'll decline and move on.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-section">
+  <div class="container">
+    <div class="rules-intro" style="text-align:center; margin-bottom: 32px;">
+      <div class="section-label">Claim Your Coupon</div>
+      <h2 class="section-title">Fill This Out &mdash; Takes 2 Minutes</h2>
+    </div>
+    <div class="form-card">
+      <form name="pizza-claim" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/claim?submitted=1">
+        <input type="hidden" name="form-name" value="pizza-claim">
+        <p class="form-honeypot">
+          <label>Don't fill this out if you're human: <input name="bot-field"></label>
+        </p>
+
+        <div class="form-group">
+          <label for="name">Your name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+          <div class="hint">We'll send your coupon code here.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel">
+          <div class="hint">Only if you want us to text you when it's ready. We won't spam.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="platform">Which platform was your video posted on? <span class="req">*</span></label>
+          <select id="platform" name="platform" required>
+            <option value="">Choose one&hellip;</option>
+            <option value="TikTok">TikTok (@pizzafornoguelph)</option>
+            <option value="Instagram">Instagram (@pizzafornoguelph)</option>
+            <option value="Both">Both</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="video_url">Link to the video we posted <span class="req">*</span></label>
+          <input type="url" id="video_url" name="video_url" required placeholder="https://www.tiktok.com/@pizzafornoguelph/video/...">
+          <div class="hint">Paste the direct link to the post on our page. If you can't find the exact link, paste your best guess and describe the video below.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="handle">Your Instagram or TikTok handle <span class="req">*</span></label>
+          <input type="text" id="handle" name="handle" required placeholder="@yourname">
+          <div class="hint">We'll use this to verify you're actually in the video.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Describe what you did in the video <span class="req">*</span></label>
+          <textarea id="description" name="description" required placeholder="e.g. &quot;I'm the guy in the red hoodie doing the cheese-pull bit around 0:15.&quot;"></textarea>
+          <div class="hint">Be specific. What were you wearing, where are you in the frame, what did you do?</div>
+        </div>
+
+        <div class="form-group">
+          <label for="flavour">Preferred pizza flavour (we'll note it, not required)</label>
+          <select id="flavour" name="flavour">
+            <option value="">Choose later at the kiosk</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Cheese">Cheese</option>
+            <option value="Meat Lovers">Meat Lovers</option>
+            <option value="BBQ Chicken">BBQ Chicken</option>
+            <option value="Vegetarian">Vegetarian</option>
+          </select>
+        </div>
+
+        <div class="form-group form-checkbox">
+          <input type="checkbox" id="agree" name="agree" required value="yes">
+          <label for="agree">I've read the rules above. I confirm I'm actually in this video, I'm over 13, and I understand only one coupon is issued per featured video on a first-come basis.</label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Submit Claim &rarr;</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS (shown when /claim-thanks URL is reached; kept here as fallback content) -->
+<section class="thanks">
+  <div class="container">
+    <h2>Got It &mdash; Claim Submitted</h2>
+    <p>We'll review your submission and get back to you by email within 3 business days. If everything checks out, your one-time coupon code will land in your inbox.</p>
+    <p style="margin-top:16px;"><a href="/" class="btn btn-ghost" style="background:rgba(255,255,255,0.1); color:#fff; border-color:rgba(255,255,255,0.2);">Back to PizzaCam</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <div class="rules-intro" style="text-align:center;">
+      <div class="section-label">Frequently Asked</div>
+      <h2 class="section-title">The Fine Print, Un-Fined</h2>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">How do I know if my video was featured?</div>
+      <div class="faq-a">Head to <a href="https://www.tiktok.com/@pizzafornoguelph" target="_blank" rel="noopener">@pizzafornoguelph on TikTok</a> or <a href="https://www.instagram.com/pizzafornoguelph/" target="_blank" rel="noopener">Instagram</a> and scroll the grid. If you recognize yourself in a post, that's a feature. If you only saw yourself in someone else's repost or a random account, that doesn't count.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">What if my friend submitted first but it's really my video?</div>
+      <div class="faq-a">Only one coupon per featured video — first submitted wins. If you both submit, we'll review, and whoever can clearly demonstrate they're in the clip (and submitted first) gets it.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">How long does review take?</div>
+      <div class="faq-a">Usually 1–3 business days. We manually review every claim. You'll get an email either way — approved with a code, or declined with a short note.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">Can I use the coupon at the St Joseph's Hamilton location?</div>
+      <div class="faq-a">Not this one — it's only redeemable at PizzaCam Guelph (149 Reynolds Walk). The other location doesn't have the camera and isn't part of this program.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">What if I lose my coupon code?</div>
+      <div class="faq-a">Email us at hello@pizzacam.ca with the name and email you used when you submitted, and we'll look it up.</div>
+    </div>
+    <div class="faq-item" onclick="this.classList.toggle('open')">
+      <div class="faq-q">Can I trade or give my coupon away?</div>
+      <div class="faq-a">No — coupons are tied to the person who earned them. If you want to treat a friend, you can still stand at the kiosk and pay for their pizza the old-fashioned way.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="https://www.instagram.com/pizzafornoguelph/" target="_blank" rel="noopener">Instagram</a></li>
+      <li><a href="https://www.tiktok.com/@pizzafornoguelph" target="_blank" rel="noopener">TikTok</a></li>
+      <li><a href="tel:18886038363">1-888-603-8363</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/takedown">Video Takedown</a></li>
+      <li><a href="/">Home</a></li>
+    </ul>
+    <p>&copy; 2026 PizzaCam.ca &mdash; 149 Reynolds Walk, University of Guelph, ON N1G 4Z8</p>
+    <p style="margin-top: 4px;">Operated by Messley Inc. Powered by <a href="https://pizzaforno.com" target="_blank" rel="noopener">PizzaForno</a>.</p>
+  </div>
+</footer>
+
+<script>
+  // Show the thanks block if redirected back here after Netlify form submit
+  if (new URLSearchParams(location.search).get('submitted') === '1') {
+    document.body.classList.add('submitted');
+    document.querySelector('.thanks').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  // Close nav on link click (mobile)
+  document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('open');
+  }));
+</script>
+</body>
+</html>
