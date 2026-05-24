@@ -4,6 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1461474932379551');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1461474932379551&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PE9G8M2NMF"></script>
   <script>
@@ -347,7 +365,7 @@
       <h2 class="section-title">Fill This Out &mdash; Takes 2 Minutes</h2>
     </div>
     <div class="form-card">
-      <form name="pizza-claim" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/claim?submitted=1">
+      <form action='/claim?submitted=1' method='POST' name='pizza-claim'>
         <input type="hidden" name="form-name" value="pizza-claim">
         <p class="form-honeypot">
           <label>Don't fill this out if you're human: <input name="bot-field"></label>
@@ -493,6 +511,15 @@
   if (new URLSearchParams(location.search).get('submitted') === '1') {
     document.body.classList.add('submitted');
     document.querySelector('.thanks').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Fire Meta Pixel LeadClaim conversion event
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead', { content_name: 'free_pizza_claim', content_category: 'pizza_cam' });
+      fbq('trackCustom', 'LeadClaim');
+    }
+    // Fire GA4 conversion event
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'pizza_claim_submitted', { event_category: 'engagement', event_label: 'free_pizza_claim' });
+    }
   }
   // Close nav on link click (mobile)
   document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
