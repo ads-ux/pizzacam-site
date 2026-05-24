@@ -110,7 +110,31 @@
         "sameAs": [
           "https://www.instagram.com/pizzafornoguelph/",
           "https://www.tiktok.com/@pizzafornoguelph"
-        ]
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "PizzaCam Guelph Menu",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Free Pizza for Featured Pizza Cam Performers",
+              "description": "If your Pizza Cam video is featured on our TikTok or Instagram (@pizzafornoguelph), your next pizza is free. Claim at pizzacam.ca/claim.",
+              "url": "https://pizzacam.ca/claim",
+              "price": "0",
+              "priceCurrency": "CAD",
+              "availability": "https://schema.org/InStock",
+              "eligibleCustomerType": "https://schema.org/Person"
+            },
+            {
+              "@type": "Offer",
+              "name": "PizzaCam Pizza — All Varieties",
+              "description": "All 5 pizza varieties (Pepperoni, Cheese, Meat Lovers, BBQ Chicken, Vegetarian) available 24/7 at $14.99 CAD.",
+              "price": "14.99",
+              "priceCurrency": "CAD",
+              "availability": "https://schema.org/InStock"
+            }
+          ]
+        }
       },
       {
         "@type": "FAQPage",
@@ -571,6 +595,58 @@
     }
     @media (max-width: 700px) {
       .tiktok-embed-grid { grid-template-columns: 1fr; max-width: 500px; margin: 40px auto 0; }
+    }
+
+    /* ========== TIKTOK WATCH LINK ========== */
+    .tiktok-watch-link {
+      display: block; text-align: center; margin-top: 10px;
+      color: rgba(255,255,255,0.6); font-size: 0.8rem; font-family: 'Inter', sans-serif;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .tiktok-watch-link:hover { color: var(--gold); }
+
+    /* ========== STICKY EMAIL BAR ========== */
+    .sticky-email-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 999;
+      background: var(--black); border-top: 2px solid var(--red);
+      padding: 12px 24px; display: flex; align-items: center;
+      justify-content: center; gap: 16px; flex-wrap: wrap;
+      transform: translateY(0); transition: transform 0.4s ease;
+    }
+    .sticky-email-bar.hidden { transform: translateY(100%); }
+    .sticky-email-bar p {
+      color: rgba(255,255,255,0.85); font-family: 'Inter', sans-serif;
+      font-size: 0.85rem; margin: 0; white-space: nowrap;
+    }
+    .sticky-email-bar p strong { color: var(--gold); }
+    .sticky-email-bar form { display: flex; gap: 8px; align-items: center; }
+    .sticky-email-bar input[type="email"] {
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 6px; padding: 8px 14px; color: var(--white);
+      font-size: 0.85rem; font-family: 'Inter', sans-serif; width: 220px;
+      outline: none;
+    }
+    .sticky-email-bar input[type="email"]:focus { border-color: var(--gold); }
+    .sticky-email-bar .bar-submit {
+      background: var(--red); color: var(--white); border: none;
+      border-radius: 6px; padding: 8px 18px; font-size: 0.85rem;
+      font-family: 'Bebas Neue', sans-serif; letter-spacing: 1px;
+      cursor: pointer; white-space: nowrap; transition: background 0.2s;
+    }
+    .sticky-email-bar .bar-submit:hover { background: var(--red-dark); }
+    .sticky-email-bar .bar-close {
+      background: none; border: none; color: rgba(255,255,255,0.4);
+      cursor: pointer; font-size: 1.2rem; padding: 4px 8px; line-height: 1;
+      flex-shrink: 0;
+    }
+    .sticky-email-bar .bar-close:hover { color: var(--white); }
+    .sticky-email-bar .bar-success {
+      color: var(--gold); font-family: 'Inter', sans-serif;
+      font-size: 0.85rem; font-weight: 600;
+    }
+    @media (max-width: 600px) {
+      .sticky-email-bar p { display: none; }
+      .sticky-email-bar input[type="email"] { width: 160px; }
     }
 
     /* ========== HOW IT WORKS ========== */
@@ -1215,46 +1291,55 @@
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7623197336692346133" data-video-id="7623197336692346133" style="max-width: 420px; min-width: 325px;">
           <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
         </blockquote>
+        <a href="https://www.tiktok.com/@pizzafornoguelph/video/7623197336692346133" target="_blank" rel="noopener" class="tiktok-watch-link">&#127916; Watch on TikTok →</a>
       </div>
       <div class="tiktok-embed-wrap">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7613461951796022548" data-video-id="7613461951796022548" style="max-width: 420px; min-width: 325px;">
           <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
         </blockquote>
+        <a href="https://www.tiktok.com/@pizzafornoguelph/video/7613461951796022548" target="_blank" rel="noopener" class="tiktok-watch-link">&#127916; Watch on TikTok →</a>
       </div>
       <div class="tiktok-embed-wrap">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7621882762982788373" data-video-id="7621882762982788373" style="max-width: 420px; min-width: 325px;">
           <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
         </blockquote>
+        <a href="https://www.tiktok.com/@pizzafornoguelph/video/7621882762982788373" target="_blank" rel="noopener" class="tiktok-watch-link">&#127916; Watch on TikTok →</a>
       </div>
       <div class="tiktok-embed-wrap">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7621294077115370773" data-video-id="7621294077115370773" style="max-width: 420px; min-width: 325px;">
           <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
         </blockquote>
+        <a href="https://www.tiktok.com/@pizzafornoguelph/video/7621294077115370773" target="_blank" rel="noopener" class="tiktok-watch-link">&#127916; Watch on TikTok →</a>
       </div>
       <div class="tiktok-embed-wrap">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7615025913209621780" data-video-id="7615025913209621780" style="max-width: 420px; min-width: 325px;">
           <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
         </blockquote>
+        <a href="https://www.tiktok.com/@pizzafornoguelph/video/7615025913209621780" target="_blank" rel="noopener" class="tiktok-watch-link">&#127916; Watch on TikTok →</a>
       </div>
       <div class="tiktok-embed-wrap">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7629517949740666132" data-video-id="7629517949740666132" style="max-width: 420px; min-width: 325px;">
           <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
         </blockquote>
+        <a href="https://www.tiktok.com/@pizzafornoguelph/video/7629517949740666132" target="_blank" rel="noopener" class="tiktok-watch-link">&#127916; Watch on TikTok →</a>
       </div>
       <div class="tiktok-embed-wrap">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7629704631022619924" data-video-id="7629704631022619924" style="max-width: 420px; min-width: 325px;">
           <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
         </blockquote>
+        <a href="https://www.tiktok.com/@pizzafornoguelph/video/7629704631022619924" target="_blank" rel="noopener" class="tiktok-watch-link">&#127916; Watch on TikTok →</a>
       </div>
       <div class="tiktok-embed-wrap">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7627913325187288341" data-video-id="7627913325187288341" style="max-width: 420px; min-width: 325px;">
           <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
         </blockquote>
+        <a href="https://www.tiktok.com/@pizzafornoguelph/video/7627913325187288341" target="_blank" rel="noopener" class="tiktok-watch-link">&#127916; Watch on TikTok →</a>
       </div>
       <div class="tiktok-embed-wrap">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@pizzafornoguelph/video/7622641341801057557" data-video-id="7622641341801057557" style="max-width: 420px; min-width: 325px;">
           <section><a target="_blank" title="@pizzafornoguelph" href="https://www.tiktok.com/@pizzafornoguelph?refer=embed">@pizzafornoguelph</a></section>
         </blockquote>
+        <a href="https://www.tiktok.com/@pizzafornoguelph/video/7622641341801057557" target="_blank" rel="noopener" class="tiktok-watch-link">&#127916; Watch on TikTok →</a>
       </div>
     </div>
 
@@ -1338,6 +1423,12 @@
       <h2 class="section-title">Frequently Asked Questions About PizzaCam Guelph</h2>
     </div>
     <div class="faq-list">
+      <article class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <div class="faq-question" itemprop="name" onclick="this.parentElement.classList.toggle('open')">How do I claim my free pizza if I was featured on TikTok or Instagram?</div>
+        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text">If your Pizza Cam moment was posted to our TikTok or Instagram (@pizzafornoguelph), you've earned a free pizza. Here's how to claim it: (1) Find your video on our TikTok or Instagram. (2) Re-share it to your story and tag @pizzafornoguelph — this must be done before you submit. (3) Visit <a href="/claim" style="color: var(--red); font-weight:600;">pizzacam.ca/claim</a> and fill out the short form with your name, email, the link to your featured video, and your preferred flavour. (4) We'll verify your re-share and send your free pizza code within 48 hours. One claim per featured video. Code valid for 30 days. Questions? Email hello@pizzacam.ca.</p>
+        </div>
+      </article>
       <article class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
         <div class="faq-question" itemprop="name" onclick="this.parentElement.classList.toggle('open')">What is PizzaCam Guelph?</div>
         <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
@@ -1447,6 +1538,9 @@
       <div class="section-label">For Pizza Chains &amp; Campus Venues</div>
       <h2 class="section-title">The Gen Z Campus Playbook.<br>Already Proven.</h2>
       <p class="section-subtitle">PizzaCam didn't just sell pizza — it built a content engine that reached 895K+ people in a single month without a single paid ad. We're now looking to bring this model to pizza chains who want a proven foot in the door with the Gen Z campus market.</p>
+      <div style="display:inline-block; background: rgba(255,184,0,0.15); border: 1px solid var(--gold); border-radius: 8px; padding: 10px 20px; margin-top: 16px; font-family:'Inter',sans-serif; font-size:0.85rem; color: var(--gold); font-weight:600;">
+        ⚡ 3 of 8 partnership slots available for Fall 2026 — 46K unique viewers/month, $0 ad spend
+      </div>
     </div>
     <div class="host-grid">
       <div>
@@ -1646,6 +1740,53 @@
     });
   }
 </script>
+
+<!-- ========== STICKY EMAIL BAR ========== -->
+<div class="sticky-email-bar" id="stickyEmailBar">
+  <p>🍕 <strong>Get the best Pizza Cam clips</strong> — straight to your inbox</p>
+  <form id="stickyEmailForm" onsubmit="handleStickyEmail(event)">
+    <input type="email" id="stickyEmailInput" placeholder="your@email.com" required aria-label="Email address">
+    <button type="submit" class="bar-submit">NOTIFY ME</button>
+  </form>
+  <button class="bar-close" onclick="dismissStickyBar()" aria-label="Close">✕</button>
+</div>
+
+<script>
+  function dismissStickyBar() {
+    document.getElementById('stickyEmailBar').classList.add('hidden');
+    try { localStorage.setItem('pizzacam_bar_dismissed', '1'); } catch(e) {}
+  }
+  function handleStickyEmail(e) {
+    e.preventDefault();
+    var email = document.getElementById('stickyEmailInput').value;
+    document.getElementById('stickyEmailForm').outerHTML = '<span class="bar-success">🎉 You\'re in! Watch your inbox.</span>';
+    try { localStorage.setItem('pizzacam_bar_dismissed', '1'); } catch(e) {}
+    // Fire Meta Pixel lead event
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', { content_name: 'sticky_email_bar' }); }
+    // Netlify-compatible form submission (fire-and-forget)
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: 'form-name=email-signup&email=' + encodeURIComponent(email) }).catch(function(){});
+  }
+  // Show bar after 15 seconds unless previously dismissed
+  try {
+    if (!localStorage.getItem('pizzacam_bar_dismissed')) {
+      setTimeout(function() {
+        var bar = document.getElementById('stickyEmailBar');
+        if (bar) bar.classList.remove('hidden');
+      }, 15000);
+      document.getElementById('stickyEmailBar').classList.add('hidden');
+    } else {
+      document.getElementById('stickyEmailBar').classList.add('hidden');
+    }
+  } catch(e) {
+    document.getElementById('stickyEmailBar').classList.add('hidden');
+  }
+</script>
+
+<!-- Hidden Netlify form declaration for email-signup -->
+<form name="email-signup" netlify netlify-honeypot="bot-field" hidden>
+  <input type="email" name="email">
+</form>
 
 </body>
 </html>
