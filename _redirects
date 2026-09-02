@@ -1,5 +1,5 @@
 # Site temporarily closed - route everything to the closed notice
-/*  /closed.html  200
+/*  /closed.html  200!
 
 # Redirect www to apex
 https://www.pizzacam.ca/* https://pizzacam.ca/:splat 301!
